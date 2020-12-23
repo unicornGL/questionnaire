@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+        * {
+            user-select: none;
+            font-family: 'Langar';
+            word-spacing: 2px;
+        }
+        body {
+            background-color: #323232;
+        }
+        h1,h3,form{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0d7377;
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 72px;
+        }
+        h3 {
+            margin-top: 30px;
+            font-size: 32px;
+        }
+        form {
+            margin-top: 100px;
+            line-height: 70px;
+            font-size: 40px;
+            font-weight: 900;
+            flex-direction: column;
+        }
+        input {
+            -webkit-appearance: none;
+            overflow:hidden;
+            width:200px;
+            height:20px;
+            outline : none;
+            background:none;
+        }
+        input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            position: relative;
+            width:20px;
+            height:20px;
+            background:#14ffec;
+            border-radius:50%;
+            transition:.2s;
+        }
+        span {
+            text-align: center;
+        }
+        output {
+            color: #880000;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text h1text">What number is the right answer ?</h1>
+    <h3 class="text h3text">Maybe all of them are wrong. Same as your life.</h3>
+    <form oninput="sol.value = parseInt(range.value) + 666">
+        <input type="range" min="-666" max="334" id="range" name="a" value="66">
+        <span>Plus</span><span>666</span><span>Equal</span><br>
+        <output name="sol" for="range"></output>
+    </form>
+</body>
+</html>

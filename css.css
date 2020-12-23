@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+* {
+  font-family: 'Langar';
+  word-spacing: 2px;
+  cursor: crosshair;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #323232;
+}
+
+h1 {
+  color: #0d7377;
+  margin-top: 80px;
+  font-size: 80px;
+}
+
+#mainScreen, .row {
+  text-align: center;
+}
+
+.smallPage {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  border: 1px solid black;
+  line-height: 200px;
+  font-size: 40px;
+  cursor: cell;
+  background-color: #212121;
+  color: #323232;
+}
+
+.smallPage:hover {
+  background-color: #0d7377;
+  color: #14ffec;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+
+#submit {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #0d7377;
+  color: #14ffec;
+  width: 90px;
+  height: 40px;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#submit:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+/*# sourceMappingURL=css.css.map */

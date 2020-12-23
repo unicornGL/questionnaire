@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Checkbox</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+        * {
+            user-select: none;
+            font-family: 'Langar';
+            word-spacing: 2px;
+        }
+        body {
+            background-color: #323232;
+        }
+        h1,h3,form{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0d7377;
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 72px;
+        }
+        h3 {
+            margin-top: 30px;
+            font-size: 32px;
+        }
+        form {
+            margin-top: 100px;
+            flex-direction: column;
+            line-height: 70px;
+        }
+        label {
+            color: #0d7377;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        label:hover {
+            color: #14ffec;
+            transition: 0.6s;
+        }
+        input {
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            display: none;
+        }
+        input.select:checked+span {
+            color: #14ffec;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text h1text">Which one do you want to choose ?</h1>
+    <h3 class="text h3text">Now you can choose all of them, buzzardcormoranthyaenahyena.</h3>
+    <form>
+        <label for="one"><input type="checkbox" class="select" id="one"><span> Choose me !</span></label>
+        <label for="two"><input type="checkbox" class="select" id="two"><span> No, choose meeeeee !</span></label>
+        <label for="three"><input type="checkbox" class="select" id="three"><span> Fuck them all ! You can choose all of us !</span></label>
+    </form>
+</body>
+</html>
